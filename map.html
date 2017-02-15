@@ -60,9 +60,10 @@ function addMapOverlay(){
         var marker = new BMap.Marker(point,{icon:new BMap.Icon("images/goose.png",new BMap.Size(32,32),{
           imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
         })});
-        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,25)});
         var opts = {
           width: 200,
+          height:100,
           title: markers[index].title,
           enableMessage: false
         };
